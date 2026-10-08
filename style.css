@@ -1,0 +1,732 @@
+/* =========================================
+
+   RESET
+
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f8fc;
+
+    color: #102a43;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+}
+
+/* =========================================
+
+   HEADER
+
+========================================= */
+
+header {
+
+    width: 100%;
+
+    min-height: 80px;
+
+    padding: 20px 7%;
+
+    background: #0B1F33;
+
+    color: #ff0000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(11, 31, 51, 0.18);
+
+}
+
+/* LOGO */
+
+.logo {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+
+    color: red;
+
+}
+
+/* NAVIGATION */
+
+nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+nav a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 10px 13px;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    border-radius: 4px;
+
+    transition: 0.3s ease;
+
+}
+
+nav a:hover {
+
+    background: #0B1F33;
+
+    color: #ff0000;
+
+}
+
+nav a.active {
+
+    background: #ffffff;
+
+    color: #0B1F33;
+
+}
+
+/* =========================================
+
+   HERO
+
+========================================= */
+
+.hero {
+
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #f4f8fc 0%,
+
+            #e7f2fc 50%,
+
+            #dceeff 100%
+
+        );
+
+    border-bottom: 1px solid #c7dced;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    padding: 30px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.label {
+
+    color: #1E6FA8;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+
+    color: #0B1F33;
+
+    font-size: clamp(60px, 10vw, 130px);
+
+    letter-spacing: 10px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+}
+
+.description {
+
+    max-width: 600px;
+
+    margin: 30px auto 0;
+
+    color: #000000;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+/* =========================================
+
+   ABOUT SECTION
+
+========================================= */
+
+.about-section {
+
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: #ffffff;
+
+}
+
+/* PHOTO */
+
+.photo {
+
+    width: 300px;
+
+    height: 360px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            #0B1F33,
+
+            #123B5D,
+
+            #1E6FA8
+
+        );
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    border-radius: 8px;
+
+    box-shadow:
+
+        0 15px 35px rgba(11, 31, 51, 0.20);
+
+    overflow: hidden;
+
+}
+
+/* If you put an image inside .photo */
+
+.photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+/* ABOUT LABEL */
+
+.section-number {
+
+    color: #ff0000;
+    
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+
+}
+
+/* ABOUT TITLE */
+
+.about-text h2 {
+
+    color: #0B1F33;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+}
+
+.about-text h2 span {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ff0000;
+
+    border-bottom: 3px solid #ff0000;
+
+}
+
+/* ABOUT PARAGRAPHS */
+
+.about-text > p:not(.section-number) {
+
+    color: #5B7083;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+    max-width: 650px;
+
+}
+
+/* PERSONAL INFORMATION */
+
+.personal-info {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 45px;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #c7dced;
+
+}
+
+.personal-info small {
+
+    color: #0B1F33;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+.personal-info p {
+
+    margin-top: 7px;
+
+    color: #5B7083;
+
+}
+
+/* =========================================
+
+   PAGE HEADER
+
+========================================= */
+
+.page-header {
+
+    width: 100%;
+
+    min-height: 40vh;
+
+    padding: 100px 8% 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #0B1F33,
+
+            #123B5D
+
+        );
+
+    color: #ff0000;
+
+    border-bottom: 4px solid #1E6FA8;
+
+}
+
+.page-header p {
+
+    color: #ff0000;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+.page-header h1 {
+
+    color: #ff0000;
+
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 1;
+
+    letter-spacing: 5px;
+
+    margin: 15px 0;
+
+}
+
+.page-header span {
+
+    color: #BBD5E8;
+
+    font-size: 16px;
+
+}
+
+/* =========================================
+
+   CARDS
+
+========================================= */
+
+.cards {
+
+    width: 100%;
+
+    min-height: 60vh;
+
+    padding: 70px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    align-content: center;
+
+    background: #f4f8fc;
+
+}
+
+/* CARD */
+
+.card {
+
+    min-height: 310px;
+
+    padding: 35px;
+
+    border: 2px solid #BCD3E5;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-shadow:
+
+        0 8px 25px rgba(11, 31, 51, 0.06);
+
+    transition:
+
+        background 0.3s ease,
+
+        color 0.3s ease,
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+/* CARD HOVER */
+
+.card:hover {
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            #ffffff,
+
+            #123B5D
+
+        );
+
+    color: #ffffff;
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 15px 35px rgba(11, 31, 51, 0.20);
+
+}
+
+/* CARD NUMBER */
+
+.number {
+
+    display: block;
+
+    color: #0B1F33;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    margin-bottom: 35px;
+
+}
+
+/* =========================================
+
+   FOOTER
+
+========================================= */
+
+footer {
+
+    width: 100%;
+
+    background: #0B1F33;
+
+    color: #ffffff;
+
+    padding: 35px 7%;
+
+    text-align: center;
+
+    border-top: 4px solid #1E6FA8;
+
+}
+
+footer p {
+
+    margin: 0;
+
+    color: #BBD5E8;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+footer .footer-name {
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+}
+
+footer .footer-links {
+
+    margin-top: 15px;
+
+}
+
+footer .footer-links a {
+
+    color: #8DC8F2;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+
+}
+
+footer .footer-links a:hover {
+
+    color: #ffffff;
+
+}
+
+/* =========================================
+
+   FOOTER RESPONSIVE
+
+========================================= */
+
+@media (max-width: 768px) {
+
+    footer {
+
+        padding: 30px 5%;
+
+    }
+
+    footer .footer-links a {
+
+        display: inline-block;
+
+        margin: 5px 8px;
+
+    }
+
+}
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 10px;
+
+}
+
+.social-links a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+}
+
+.social-links i {
+
+    font-size: 20px;
+
+}
+
+.social-links a:hover {
+
+    opacity: 0.6;
+
+    transform: translateY(-2px);
+
+}
